@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Markiki Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+ 
 </head>
 <body>
-    
+    <nav>
+        <div class="nav">
+            <i class="fa-solid fa-magnifying-glass"></i><input type="text" value="Search" class="">
+            <a href="#">Markiki</a>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">LogOut</a></li>
+        </ul>
+    </nav>
+     <h1>DashBoard</h1>
+     <div class="container">
+        <div class="dashboard">
+            <h2>Dashboard</h2>
+            <input type="text" id="itemName" placeholder="Name">
+            <input type="number" id="itemPrice" placeholder="Price">
+            <input type="text" id="itemImg" placeholder="Img URL">
+            <button id="addToList">Add to List</button>
+        </div>
+
+        <div class="cart">
+            <h2>Cart</h2>
+            <button id="selectAll">Select all</button>
+            <button id="clearCart">Remove</button>
+            <div class="cart-items"></div>
+            <h3>Total Price: <span id="totalPrice">0.00</span> $</h3>
+            <button id="checkout">Order</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
