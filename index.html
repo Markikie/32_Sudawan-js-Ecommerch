@@ -14,31 +14,33 @@
             <i class="fa-solid fa-magnifying-glass"></i><input type="text" value="Search" class="">
             <a href="#">Markiki</a>
         </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Cart</a></li>
-            <li><a href="#">LogOut</a></li>
-        </ul>
-    </nav>
-     <h1>DashBoard</h1>
-     <div class="container">
-        <div class="dashboard">
-            <h2>Dashboard</h2>
-            <input type="text" id="itemName" placeholder="Name">
-            <input type="number" id="itemPrice" placeholder="Price">
-            <input type="text" id="itemImg" placeholder="Img URL">
-            <button id="addToList">Add to List</button>
-        </div>
 
-        <div class="cart">
-            <h2>Cart</h2>
-            <button id="selectAll">Select all</button>
-            <button id="clearCart">Remove</button>
-            <div class="cart-items"></div>
-            <h3>Total Price: <span id="totalPrice">0.00</span> $</h3>
-            <button id="checkout">Order</button>
-        </div>
+    </nav>
+    
+    <h1>E-Commerce Dashboard</h1>
+
+    <!-- Input Form -->
+    <div class="container">
+        <input type="text" id="productName" placeholder="Product Name">
+        <input type="number" id="productPrice" placeholder="Price">
+        <input type="text" id="productImage" placeholder="Image URL">
+        <button id="createProduct">Add Product</button>
     </div>
+
+    <!-- Product List -->
+    <h2>Product List</h2>
+    <ul id="products" class="product-list"></ul>
+
+    <!-- Cart Section -->
+    <h2>Cart</h2>
+    <div class="cart">
+    <ul id="cartItems"></ul>
+    <h3>Total: <span id="totalPrice">0.00</span> $</h3>
+    <div class="btn">
+        <button id="clearCart">Clear Cart</button>
+        <button id="checkout">Check Out</button>
+    </div>
+   </div>
     <script src="app.js"></script>
 </body>
 </html>
